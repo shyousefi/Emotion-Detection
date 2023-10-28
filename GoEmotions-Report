@@ -1,0 +1,10 @@
+The goal of this code is to classify emotions in the GoEmotions dataset from Demszky et al. 2020 using a pre-trained BERT model and determine the accuracy of the model by comparing the predicted emotion with the majority vote of the raters. The code uses the Hugging Face Transformers library to load the pre-trained model and tokenizer, and PyTorch to perform the classification.
+
+The solution consists of the following steps:
+    Load the dataset using pandas.
+    Load the pre-trained BERT model and tokenizer using the Hugging Face Transformers library.
+    Define a function to classify the emotions in the dataset using the pre-trained model.
+    Apply the ``classify\_emotions'' function to the `text` column of the dataset to classify the emotions.
+    Determine the maximum rate of each rater for each text.
+    Determine the majority vote for each text by taking the emotion with the highest frequency for each text.
+    Merge the maximum rate of each rater for each text and the predicted emotion to get the accuracy of the model.
