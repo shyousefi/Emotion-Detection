@@ -1,4 +1,4 @@
-The goal of this code is to classify emotions in the GoEmotions dataset from Demszky et al. 2020. Only six emotions: anger, disgust, fear, joy, sadness, and surprise are detected. Using a pre-trained model (bert-base-uncased-goemotions-ekman-finetuned) determine the accuracy of the model by comparing the predicted emotion with the majority vote of the raters. The code uses the Hugging Face Transformers library to load the pre-trained model and tokenizer, and PyTorch to perform the classification.
+The goal of this code is to classify emotions in the GoEmotions dataset from Demszky et al. 2020 (https://arxiv.org/pdf/2005.00547v2.pdf). Only six emotions: anger, disgust, fear, joy, sadness, and surprise are detected. Using a pre-trained model (bert-base-uncased-goemotions-ekman-finetuned) determine the accuracy of the model by comparing the predicted emotion with the majority vote of the raters. The code uses the Hugging Face Transformers library to load the pre-trained model and tokenizer, and PyTorch to perform the classification.
 
 The solution consists of the following steps:
     Load the dataset using pandas.
